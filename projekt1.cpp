@@ -13,14 +13,26 @@ int main() {
     cin >> a >> b;
 
     int wyjscie;
+
     do {
         cout << endl;
         cout << endl;
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+        cout << "1. Silnia" << endl;
+
         cin >> wyjscie;
-    } while(wyjscie != 0);
+
+        if (wyjscie == 1) {
+            int liczba;
+            cout << "Podaj liczbe: ";
+            cin >> liczba;
+
+            cout << "Silnia z " << liczba << " = " << silnia(liczba) << endl;
+        }
+
+    } while (wyjscie != 0);
 
     return 0;
 }
