@@ -23,8 +23,21 @@ int main() {
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+        cout << "1. Czy liczba jest pierwsza" << endl;
 
         cin >> wyjscie;
+
+        if (wyjscie == 1) {
+            int liczba;
+            cout << "Podaj liczbe: ";
+            cin >> liczba;
+
+            if (czyPierwsza(liczba)) {
+                cout << "Liczba jest pierwsza" << endl;
+            } else {
+                cout << "Liczba nie jest pierwsza" << endl;
+            }
+        }
 
     } while(wyjscie != 0);
 
